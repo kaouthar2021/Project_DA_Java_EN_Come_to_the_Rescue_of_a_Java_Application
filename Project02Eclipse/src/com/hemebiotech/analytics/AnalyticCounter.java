@@ -6,7 +6,12 @@ import java.io.IOException;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
+/**
+ * AnalyticCounter permet de ;
+ * lire la liste de symptoms du fichier symptoms.txt et remplir la list symptomsList avec la liste de symptoms
+ * calculer le nombre d'occurences et remplir la map symptoms
+ * ecrire le contenu de la map dans le fichier output
+    */
 
 
 public class AnalyticCounter {
@@ -15,7 +20,7 @@ public class AnalyticCounter {
     private   List<String> symptomsList;
     private  final  String  output;
     public AnalyticCounter(String output){
-        this.reader=new ReadSymptomDataFromFile("C:\\Users\\sadok\\IdeaProjects\\Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application\\Project02Eclipse\\symptoms.txt");
+        this.reader=new ReadSymptomDataFromFile("Project02Eclipse\\symptoms.txt");
         this.symptoms=new TreeMap<>();
         this.output= output;
 
@@ -44,7 +49,7 @@ public class AnalyticCounter {
 
     }
     public void write() throws IOException {
-        //ecrire le contenu de la map dans  le fichier out put
+        //ecrire le contenu de la map dans  le fichier output
 
         FileWriter fw=new FileWriter(output);
         BufferedWriter bw = new BufferedWriter(fw);
