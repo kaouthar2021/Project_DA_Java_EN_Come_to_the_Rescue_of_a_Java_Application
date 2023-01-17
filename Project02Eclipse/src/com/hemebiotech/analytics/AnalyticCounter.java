@@ -20,7 +20,7 @@ public class AnalyticCounter {
     private   List<String> symptomsList;
     private  final  String  output;
     public AnalyticCounter(String output){
-        this.reader=new ReadSymptomDataFromFile("Project02Eclipse\\symptoms.txt");
+        this.reader=new ReadSymptomDataFromFile("./Project02Eclipse/symptoms.txt");
         this.symptoms=new TreeMap<>();
         this.output= output;
 

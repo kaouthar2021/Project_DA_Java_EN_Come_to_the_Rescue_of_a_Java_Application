@@ -15,7 +15,7 @@ public class Symptom {
 
    public static void main(String[] args) throws Exception{
         // read the file
-     AnalyticCounter counter= new AnalyticCounter("output");
+     AnalyticCounter counter= new AnalyticCounter("./Project02Eclipse/output");
      counter.read();
      counter.count();
      counter.write();
